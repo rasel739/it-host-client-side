@@ -1,0 +1,23 @@
+.pricingTab {
+  margin-left: 40%;
+  margin-bottom: 2rem;
+}
+
+.pricingStyleOne {
+  background: linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+  background: -webkit-linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+  background: -moz-linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+}
+.pricingStyleTwo {
+  background-color: #15095e;
+}
+.pricingStyleThree {
+  background: linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+  background: -webkit-linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+  background: -moz-linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+}
+.pricingStyleYearly {
+  background: linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+  background: -webkit-linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+  background: -moz-linear-gradient(210deg, #15095e 50%, #103fd0 80%);
+}

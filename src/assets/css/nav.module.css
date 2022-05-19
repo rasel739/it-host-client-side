@@ -1,0 +1,11 @@
+.navStyle {
+  margin-left: 5rem;
+}
+
+.navBgColor {
+  background: linear-gradient(129deg, #15095e 0%, #13208e 80%);
+  background: -webkit-linear-gradient(129deg, #15095e 0%, #13208e 80%);
+  background: -moz-linear-gradient(129deg, #15095e 0%, #13208e 80%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
