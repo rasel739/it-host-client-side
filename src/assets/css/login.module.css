@@ -1,0 +1,17 @@
+.google-login {
+  width: 2rem;
+  height: 2rem;
+}
+
+.github-login {
+  width: 1.5rem;
+  height: 2rem;
+}
+
+.loginBg {
+  background: linear-gradient(151deg, #15095e 0%, #13208e 80%);
+  background: -webkit-linear-gradient(151deg, #15095e 0%, #13208e 80%);
+  background: -moz-linear-gradient(151deg, #15095e 0%, #13208e 80%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

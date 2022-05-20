@@ -7,8 +7,11 @@ import {
 } from "react-icons/bs";
 import navigationStyle from "../../assets/css/nav.module.css";
 import itHostLogo from "../../assets/images/it-host-logo.png";
+import useFirebase from "../../helpers/hooks/useFirebase";
 
 const Navigation = () => {
+  const { user, LogOut } = useFirebase();
+
   return (
     <Navbar className={navigationStyle.navBgColor} expand="lg">
       <Container>
@@ -21,20 +24,20 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto me-5" style={{ marginLeft: "5rem" }}>
-            <Nav.Link href="#home" className="me-5 text-light">
+            <Nav.Link href="/home" className="me-5 text-light">
               Home
             </Nav.Link>
-            <Nav.Link href="#link" className="me-5 text-light">
+            <Nav.Link href="/hosting" className="me-5 text-light">
               Hosting
             </Nav.Link>
-            <Nav.Link href="#link" className="me-5 text-light">
+            <Nav.Link href="/service" className="me-5 text-light">
               Service
             </Nav.Link>
 
-            <Nav.Link href="#link" className="me-5 text-light">
+            <Nav.Link href="/blog" className="me-5 text-light">
               Blog
             </Nav.Link>
-            <Nav.Link href="#link" className="me-5 text-light">
+            <Nav.Link href="/contact" className="me-5 text-light">
               Contact
             </Nav.Link>
           </Nav>
@@ -49,9 +52,20 @@ const Navigation = () => {
             <Nav.Link href="#link" className="text-light">
               <BsFillChatSquareFill />
             </Nav.Link>
-            <Nav.Link href="#link" className="text-light">
-              Login
-            </Nav.Link>
+            {user?.email ? (
+              <>
+                <Nav.Link href="/myAccount" className="text-light">
+                  My Account
+                </Nav.Link>
+                <Nav.Link href="/login" onClick={LogOut} className="text-light">
+                  LogOut
+                </Nav.Link>
+              </>
+            ) : (
+              <Nav.Link href="/login" className="text-light">
+                Login
+              </Nav.Link>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

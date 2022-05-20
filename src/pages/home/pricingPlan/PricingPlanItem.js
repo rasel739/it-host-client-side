@@ -1,8 +1,14 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const PricingPlanItem = ({ pricingHostingArray }) => {
+  const navigate = useNavigate();
+
+  console.log(pricingHostingArray);
+
   const {
+    id,
     priceTitle,
     priceText,
     startingAt,
@@ -13,6 +19,12 @@ const PricingPlanItem = ({ pricingHostingArray }) => {
     priceImage,
     pricingStyle,
   } = pricingHostingArray;
+
+  const handleDetails = (Id) => {
+    navigate(`/hostingDetails/${Id}`);
+  };
+
+  console.log(id);
 
   return (
     <Card className={pricingStyle}>
@@ -31,7 +43,11 @@ const PricingPlanItem = ({ pricingHostingArray }) => {
             $ <del className="text-light">{discountPrice}</del>
           </span>
         </Card.Text>
-        <Button variant="primary" className="bg-light text-dark">
+        <Button
+          variant="primary"
+          onClick={() => handleDetails(id)}
+          className="bg-light text-dark"
+        >
           {buyNow}
         </Button>
       </Card.Body>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "pricingStyle": "",
+    "priceTitle": "Cloud Hosting",
+    "priceText": "The High performance cloud platform ever",
+    "startingAt": "Starting at",
+    "price": 52,
+    "discount": "30% Discount",
+    "discountPrice": 60,
+    "buyNow": "Buy Now",
+    "priceImage": "https://i.ibb.co/cvfLznZ/hosting-price-img.png"
+  },
+  {
+    "id": 2,
+    "pricingStyle": "",
+    "priceTitle": "VPS Hosting",
+    "priceText": "The High performance cloud platform ever",
+    "startingAt": "Starting at",
+    "price": 45,
+    "discount": "30% Discount",
+    "discountPrice": 80.99,
+    "buyNow": "Buy Now",
+    "priceImage": "https://i.ibb.co/cvfLznZ/hosting-price-img.png"
+  },
+  {
+    "id": 3,
+    "pricingStyle": "",
+    "priceTitle": "Shared Hosting",
+    "priceText": "The High performance cloud platform ever",
+    "startingAt": "Starting at",
+    "price": 20,
+    "discount": "30% Discount",
+    "discountPrice": 30.99,
+    "buyNow": "Buy Now",
+    "priceImage": "https://i.ibb.co/cvfLznZ/hosting-price-img.png"
+  },
+  {
+    "id": 4,
+    "pricingStyle": "",
+    "priceTitle": "Dedicated Server",
+    "priceText": "The High performance cloud platform ever",
+    "startingAt": "Starting at",
+    "price": 29.99,
+    "discount": "30% Discount",
+    "discountPrice": 35.99,
+    "buyNow": "Buy Now",
+    "priceImage": "https://i.ibb.co/cvfLznZ/hosting-price-img.png"
+  },
+  {
+    "id": 5,
+    "pricingStyle": "",
+    "priceTitle": "Reseller Hosting",
+    "priceText": "The High performance cloud platform ever",
+    "startingAt": "Starting at",
+    "price": 31.99,
+    "discount": "30% Discount",
+    "discountPrice": 38.99,
+    "buyNow": "Buy Now",
+    "priceImage": "https://i.ibb.co/cvfLznZ/hosting-price-img.png"
+  },
+  {
+    "id": 6,
+    "pricingStyle": "",
+    "priceTitle": "Shared Hosting",
+    "priceText": "The High performance cloud platform ever",
+    "startingAt": "Starting at",
+    "price": 33.99,
+    "discount": "30% Discount",
+    "discountPrice": 39.99,
+    "buyNow": "Buy Now",
+    "priceImage": "https://i.ibb.co/cvfLznZ/hosting-price-img.png"
+  }
+]

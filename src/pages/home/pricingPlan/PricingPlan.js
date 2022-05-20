@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import pricingStyle from "../../../assets/css/pricingPlans.module.css";
 import HomeTitle from "../../../components/comonTitle/HomeTitle";
+import usePricingPlan from "../../../helpers/hooks/usePricingPlan";
 import PricingPlanItem from "./PricingPlanItem";
 
 const PricingPlan = () => {
   const [key, setKey] = useState("Monthly");
 
+  const [data] = usePricingPlan();
+
   const bestHostingObj = [
     {
-      id: 1,
+      id: data[0]?._id,
       pricingStyle: pricingStyle.pricingStyleOne,
       priceTitle: "Cloud Hosting",
       priceText: "The High performance cloud platform ever",
@@ -21,7 +24,7 @@ const PricingPlan = () => {
       priceImage: "https://i.ibb.co/cvfLznZ/hosting-price-img.png",
     },
     {
-      id: 2,
+      id: data[1]?._id,
       pricingStyle: pricingStyle.pricingStyleTwo,
       priceTitle: "VPS Hosting",
       priceText: "The High performance cloud platform ever",
@@ -33,7 +36,7 @@ const PricingPlan = () => {
       priceImage: "https://i.ibb.co/cvfLznZ/hosting-price-img.png",
     },
     {
-      id: 3,
+      id: data[2]?._id,
       pricingStyle: pricingStyle.pricingStyleThree,
       priceTitle: "Shared Hosting",
       priceText: "The High performance cloud platform ever",
@@ -45,7 +48,7 @@ const PricingPlan = () => {
       priceImage: "https://i.ibb.co/cvfLznZ/hosting-price-img.png",
     },
     {
-      id: 4,
+      id: data[3]?._id,
       pricingStyle: pricingStyle.pricingStyleYearly,
       priceTitle: "Dedicated Server",
       priceText: "The High performance cloud platform ever",
@@ -57,7 +60,7 @@ const PricingPlan = () => {
       priceImage: "https://i.ibb.co/cvfLznZ/hosting-price-img.png",
     },
     {
-      id: 5,
+      id: data[4]?._id,
       pricingStyle: pricingStyle.pricingStyleYearly,
       priceTitle: "Reseller Hosting",
       priceText: "The High performance cloud platform ever",
@@ -69,7 +72,7 @@ const PricingPlan = () => {
       priceImage: "https://i.ibb.co/cvfLznZ/hosting-price-img.png",
     },
     {
-      id: 6,
+      id: data[5]?._id,
       pricingStyle: pricingStyle.pricingStyleYearly,
       priceTitle: "Shared Hosting",
       priceText: "The High performance cloud platform ever",
